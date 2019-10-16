@@ -1,0 +1,37 @@
+<!-- <h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <button class="btn btn-primary" (click)="addToCart(product)">Buy</button>
+
+</div> -->
+<!-- <div class="container" style="background-color: aquamarine">
+  <div class="align-items-center" style="background-color: beige">
+    <h2 class="my-5 text-center">Product Details</h2>
+
+    <div class="mt-5 ml-5 text-center container" *ngIf="product">
+      <img src="assets/{{product.name}}.jpg" alt="">
+      <h3>{{ product.name }}</h3>
+      <h4>{{ product.price | currency }}</h4>
+      <button class="btn btn-primary my-5 px-5" (click)="addToCart(product)">Buy</button>
+    
+    </div>
+    
+
+  </div>
+</div> -->
+<div class="container">
+  <div clas="offset-sm-4 col-sm-4">
+    <div class="offset-sm-3 col-sm-6 jumbotron">
+        <h1 class="display-4">Product Details</h1>
+        <img src="assets/{{product.name}}.jpg" alt="">
+            <hr class="my-4">
+            <h3>{{ product.name }}</h3>
+            <h4>{{ product.price | currency }}</h4>
+            <button class="btn btn-primary my-5 px-5" (click)="addToCart(product)">Buy</button>
+      </div>
+    </div>   
+    
+</div>
+

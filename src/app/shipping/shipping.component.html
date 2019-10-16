@@ -1,0 +1,25 @@
+<!-- <h3>Shipping Prices</h3>
+
+<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+  <span>{{ shipping.type }}</span>
+  <span>{{ shipping.price | currency }}</span>
+  <hr class="my-4">
+</div> -->
+
+<div class="container">
+  <div class="mt-5">
+      <div class="offset-sm-4 col-sm-4 jumbotron">
+        <h2>Shipping Prices</h2>
+          <div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+              <hr class="my-4">
+              <h4>{{ shipping.type }}</h4>
+              <span>{{ shipping.price | currency }}</span>
+              
+            </div>
+            <div class="ml-5">
+                <button class="text-center btn btn-info ml-5" routerLink="/cart">Back</button>
+
+            </div>
+        </div>
+  </div>
+</div>

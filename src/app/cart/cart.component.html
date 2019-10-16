@@ -1,0 +1,30 @@
+
+
+
+<div class="container mt-5">
+  <div class="offset-sm-4 col-sm-4 ">
+      <div class="jumbotron">
+          <h1 class="display-4 text-center">CART</h1>
+          <hr class="my-4">
+          <div class="cart-item" *ngFor="let item of items">
+              <h2>{{ item.name }}</h2>
+              <div>
+                  <h2>{{ item.price | currency }}</h2>
+              </div>
+              
+            </div>
+      
+          <p>delivered within 2-3
+            days</p>
+          <p class="lead text-center">
+              <a routerLink="/shipping">Shipping Prices</a>
+            </p>
+            <div class="ml-5">
+                <button class="btn btn-warning ml-5" (click)="purchase()">Purchase</button>
+
+            </div>
+
+        </div>
+  </div>
+
+</div>
